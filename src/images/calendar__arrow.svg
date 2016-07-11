@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14.03" viewBox="0 0 8 14.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="calendar__arrow" class="cls-1" d="M1216.64,1722a1.572,1.572,0,0,1,1.16.53l4.72,5.2a1.907,1.907,0,0,1,0,2.53l-4.72,5.21a1.544,1.544,0,0,1-2.32.01,1.92,1.92,0,0,1,0-2.54l3.57-3.94-3.57-3.94a1.92,1.92,0,0,1,0-2.54A1.561,1.561,0,0,1,1216.64,1722Z" transform="translate(-1215 -1722)"/>
+</svg>
