@@ -1,0 +1,172 @@
+doctype html
+html(lang="ru")
+  - title = "О школе | GUSTOMAESTRO"
+  include blocks/head/head
+
+  body
+    include blocks/browser-warning/browser-warning
+    // top-panel
+    section.top-panel
+      .top-panel__container
+        ul.top-panel__social-list
+          li.top-panel__social-item: a.top-panel__social-item--rss(target="_blank", href="http://www.gustomaestro.ru/feed.php")
+          li.top-panel__social-item: a.top-panel__social-item--vk(target="_blank", href="https://vk.com/gustomaestro")
+          li.top-panel__social-item: a.top-panel__social-item--facebook(target="_blank", href="https://www.facebook.com/gustospb?ref=hl")
+          li.top-panel__social-item: a.top-panel__social-item--instagram(target="_blank", href="https://www.instagram.com/gustorestaurant/")
+          li.top-panel__social-item: a.top-panel__social-item--tripadvisor(target="_blank", href="http://goo.gl/Ra2iEb")
+          li.top-panel__social-item: a.top-panel__social-item--foursquare(target="_blank", href="https://goo.gl/WMmoKW")
+
+        ul.top-panel__contacts-list
+          li.top-panel__contacts-item.top-panel__contacts-item--phone: a(target="_blank", href="tel:78129033732") (812) 903 37 32
+          li.top-panel__contacts-item.top-panel__contacts-item--address Санкт-Петербург, Дегтярная ул., 1
+
+    include blocks/header/header
+
+    // promo
+    section.promo.promo--about
+      .promo__container
+        h1.promo__title О школе
+
+    // two-col-text
+    .two-col-text
+      .two-col-text__container
+        p.two-col-text__text 1 октября 2012 года в ресторане Gusto открылся уникальный проект. Место для настоящих гурманов и просто любителей вкусной еды. Каждый, кто интересуется кулинарией, сможет расширить свои знания и научиться чему-то новому. Кулинарная школа GUSTOMAESTRO – это авторский проект шеф-повара итальянского ресторана GUSTO Фабрицио Фатуччи. Она открывает свои двери для тех, кто хочет узнать новое о кулинарии, приобрести и усовершенствовать свои навыки в умении готовить вкусно.
+
+    // advantages
+    section.advantages
+      .advantages__container
+        h3.advantages__title У нас на мероприятиях
+        ul.advantages__list
+          li.advantages__item
+            .advantages__image.advantages__image--chief
+            p.advantages__text Каждый гость полностью участвует в приготовлении своего блюда, минуя при этом процессы заготовки продуктов
+          li.advantages__item
+            .advantages__image.advantages__image--dish
+            p.advantages__text Можно заказывать еду и напитки в ресторане GUSTO. На мастер-классе работают официанты
+          li.advantages__item
+            .advantages__image.advantages__image--plate
+            p.advantages__text Высокое техническое оснащение: итальянская техника SMEG, фарфор ЛФЗ, посуда Villeroy&Boch
+
+    // col-text-col-image
+    section.col-text-col-image
+      .col-text-col-image__container
+        .col-text-col-image__content
+          h3.col-text-col-image__title На мастер-классах
+          p.col-text-col-image__text Вы сможете посетить не только курсы итальянской кухни, но и узнать секретные рецепты шеф-поваров со всего мира. Кулинарные мастер-классы посвящены разнообразным тематикам. Таким, как, «Мясо. Секреты от шефа », «Традиционная сицилийская кухня», «Домашняя паста» и многие другие. #[br] #[br] У каждого ученика будет возможность  не только приготовить и попробовать блюдо, но даже забрать домой, чтобы угостить близких. Кроме того, в кулинарной школе предусмотрены занятия для самых маленьких – детские кулинарные мастер-классы и уроки, а также школа этикета bambini.
+          a.btn.col-text-col-image__btn(href="#") Посмотреть расписание
+        .col-text-col-image__image
+          img(src="images/mk__promo-preview.jpg")
+
+    // col-text-col-image
+    section.col-text-col-image.col-text-col-image--image-left
+      .col-text-col-image__container
+        .col-text-col-image__content
+          h3.col-text-col-image__title На праздниках и корпоративах
+          p.col-text-col-image__text Вы сможете оригинально отметить важное событие, устроить кулинарный поединок в рамках тимблидинга или провести встречу с партнерами и прессой в неформальной обстановке. Кулинарная школа GUSTOMAESTRO – это не только школа итальянской кухни, но и особая площадка для презентаций, корпоративных и личных праздников. #[br] #[br] Все заботы по приготовлению не только мастер-класса, но и всего мероприятия мы возьмем на себя- организуем фуршет, пригласим диджэея, украсим кулинарную школу цветами или шариками, привлечем аниматоров, фокусников,артистов, подготовим сувенирную продукцию, организуем награждение победителей дипломами.
+          a.btn.col-text-col-image__btn(href="#") Узнать больше и заказать
+        .col-text-col-image__image
+          img(src="images/celebrate__promo-preview.jpg")
+
+    // about-chiefs
+    section.about-chiefs
+      .about-chiefs__container
+        h2.about-chiefs__title О шеф-поварах
+        ul.about-chiefs__list
+          li.about-chiefs__item
+            .about-chiefs__image
+              img(src="images/chef__promo--preview.jpg")
+            .about-chiefs__content
+              h4.about-chiefs__subtitle Фабрицио Фатуччи
+              span.about-chiefs__span Итальянская кухня
+              p.about-chiefs__text Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома.
+              a.link.about-chiefs__more(href="#") Подробно о шефе
+          li.about-chiefs__item
+            .about-chiefs__image
+              img(src="images/chef__promo--preview.jpg")
+            .about-chiefs__content
+              h4.about-chiefs__subtitle Фабрицио Фатуччи
+              span.about-chiefs__span Итальянская кухня
+              p.about-chiefs__text Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома.
+              a.link.about-chiefs__more(href="#") Подробно о шефе
+          li.about-chiefs__item
+            .about-chiefs__image
+              img(src="images/chef__promo--preview.jpg")
+            .about-chiefs__content
+              h4.about-chiefs__subtitle Фабрицио Фатуччи
+              span.about-chiefs__span Итальянская кухня
+              p.about-chiefs__text Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома.
+              a.link.about-chiefs__more(href="#") Подробно о шефе
+          li.about-chiefs__item
+            .about-chiefs__image
+              img(src="images/chef__promo--preview.jpg")
+            .about-chiefs__content
+              h4.about-chiefs__subtitle Фабрицио Фатуччи
+              span.about-chiefs__span Итальянская кухня
+              p.about-chiefs__text Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома.
+              a.link.about-chiefs__more(href="#") Подробно о шефе
+          li.about-chiefs__item
+            .about-chiefs__image
+              img(src="images/chef__promo--preview.jpg")
+            .about-chiefs__content
+              h4.about-chiefs__subtitle Фабрицио Фатуччи
+              span.about-chiefs__span Итальянская кухня
+              p.about-chiefs__text Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома.
+              a.link.about-chiefs__more(href="#") Подробно о шефе
+          li.about-chiefs__item
+            .about-chiefs__image
+              img(src="images/chef__promo--preview.jpg")
+            .about-chiefs__content
+              h4.about-chiefs__subtitle Фабрицио Фатуччи
+              span.about-chiefs__span Итальянская кухня
+              p.about-chiefs__text Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома.
+              a.link.about-chiefs__more(href="#") Подробно о шефе
+          li.about-chiefs__item
+            .about-chiefs__image
+              img(src="images/chef__promo--preview.jpg")
+            .about-chiefs__content
+              h4.about-chiefs__subtitle Фабрицио Фатуччи
+              span.about-chiefs__span Итальянская кухня
+              p.about-chiefs__text Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома.
+              a.link.about-chiefs__more(href="#") Подробно о шефе
+          li.about-chiefs__item
+            .about-chiefs__image
+              img(src="images/chef__promo--preview.jpg")
+            .about-chiefs__content
+              h4.about-chiefs__subtitle Фабрицио Фатуччи
+              span.about-chiefs__span Итальянская кухня
+              p.about-chiefs__text Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома.
+              a.link.about-chiefs__more(href="#") Подробно о шефе
+
+    // contacts
+    .contacts
+      .contacts__map
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.1122120570753!2d30.367897016222162!3d59.93028016973474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631bbf5f15f89%3A0x906cc43464858c52!2z0JTQtdCz0YLRj9GA0L3QsNGPINGD0LsuLCAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMDM2!5e0!3m2!1sru!2sru!4v1468303020570", width="800", height="410", frameborder="0", style="border:0",allowfullscreen)
+      .contacts__content
+        h2.contacts__title Как нас найти
+        span.contacts__span Санкт-Петербург, Дегтярная ул., 1
+        span.contacts__span (812) 903 37 32
+        p.contacts__text Наши гости могут припарковаться во внутреннем дворе ресторана. Въезд во двор расположен перед зданием ресторана от Невского пр. При въезде во двор, пожалуйста, позвоните по телефону (812) 941 17 44
+        ul.contacts__social-list
+          li.contacts__social-item: a.contacts__social-item--rss(target="_blank", href="http://www.gustomaestro.ru/feed.php")
+          li.contacts__social-item: a.contacts__social-item--vk(target="_blank", href="https://vk.com/gustomaestro")
+          li.contacts__social-item: a.contacts__social-item--facebook(target="_blank", href="https://www.facebook.com/gustospb?ref=hl")
+          li.contacts__social-item: a.contacts__social-item--instagram(target="_blank", href="https://www.instagram.com/gustorestaurant/")
+          li.contacts__social-item: a.contacts__social-item--tripadvisor(target="_blank", href="http://goo.gl/Ra2iEb")
+          li.contacts__social-item: a.contacts__social-item--foursquare(target="_blank", href="https://goo.gl/WMmoKW")
+
+    // footer
+    .footer
+      .footer__container
+        .footer__logo
+        nav.footer__menu
+          ul.footer__list
+            li.footer__item: a(href="#") Мастер-классы
+            li.footer__item: a.active(href="#") Праздники и корпоративы
+            li.footer__item: a(href="#") О школе и поварах
+            li.footer__item: a(href="#") Галерея
+            li.footer__item: a(href="#") Партнёры
+            li.footer__item: a(href="#") Блог шеф-повара
+            li.footer__item: a(href="#") Контакты
+          ul.footer__labels
+            li.footer__labels-item Copyright © 2015 GUSTOMAESTRO
+            li.footer__labels-item Сделано в Astralite

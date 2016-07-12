@@ -18,3 +18,24 @@ $largeScreen: 1400px;
     @media (min-width: $desktop) { @content; }
   }
 }
+
+$font-size-h1: 48px;
+$font-size-h2: 36px;
+$font-size-h3: 28px;
+$font-size-h4: 18px;
+$font-size-text-big: 16px;
+$font-size-text: 14px;
+
+$container: 1170px;
+
+$sans-serif: 'Roboto', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$serif: "Roboto Slab", "Georgia", serif;
+
+$main-color: #a33208;
+
+@mixin container {
+  width: $container;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}

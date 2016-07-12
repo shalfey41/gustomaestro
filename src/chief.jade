@@ -1,0 +1,140 @@
+doctype html
+html(lang="ru")
+  - title = "Фабрицио Фатуччи | GUSTOMAESTRO"
+  include blocks/head/head
+
+  body
+    include blocks/browser-warning/browser-warning
+    // top-panel
+    section.top-panel
+      .top-panel__container
+        ul.top-panel__social-list
+          li.top-panel__social-item: a.top-panel__social-item--rss(target="_blank", href="http://www.gustomaestro.ru/feed.php")
+          li.top-panel__social-item: a.top-panel__social-item--vk(target="_blank", href="https://vk.com/gustomaestro")
+          li.top-panel__social-item: a.top-panel__social-item--facebook(target="_blank", href="https://www.facebook.com/gustospb?ref=hl")
+          li.top-panel__social-item: a.top-panel__social-item--instagram(target="_blank", href="https://www.instagram.com/gustorestaurant/")
+          li.top-panel__social-item: a.top-panel__social-item--tripadvisor(target="_blank", href="http://goo.gl/Ra2iEb")
+          li.top-panel__social-item: a.top-panel__social-item--foursquare(target="_blank", href="https://goo.gl/WMmoKW")
+
+        ul.top-panel__contacts-list
+          li.top-panel__contacts-item.top-panel__contacts-item--phone: a(target="_blank", href="tel:78129033732") (812) 903 37 32
+          li.top-panel__contacts-item.top-panel__contacts-item--address Санкт-Петербург, Дегтярная ул., 1
+
+    include blocks/header/header
+
+    // breadcrumbs
+    .breadcrumbs
+      .breadcrumbs__container
+        ul.breadcrumbs__list
+          li.breadcrumbs__item: a(href="#") О школе и команде
+          li.breadcrumbs__item >
+          li.breadcrumbs__item.active Фабрицио Фаттучи
+
+    // about-chief
+    .about-chief
+      .about-chief__container
+        .about-chief__image
+          img(src="images/chef__promo.jpg")
+        .about-chief__content
+          h3.about-chief__title Фабрицио Фатуччи
+          span.about-chief__subtitle Итальянская кухня
+          p.about-chief__text Искусство готовить, по версии мэтра, – это, прежде всего, чувства, эмоции и настроение, которые можно подарить другим. В поисках этих главных ингредиентов, уроженец Рима, он объездил всю Италию. Впитал ароматы Тосканы, Сицилии, Неаполя, и наполнил ими свои блюда. Его кредо - импровизация с душой. Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома. #[br] #[br] Для создания гастрономических шедевров он использует свежайшие натуральные продукты, обязательно по сезону. Ведь только естественное может быть полезным! Этому научила Фабрицио его бабушка Луиджина, которой он обязан страстью к кулинарии. Почтенной синьоре можно верить – в свои 90 она отлично себя чувствует, и придумывает новые рецепты. Их, кстати, немало в меню «Gusto» - консоме из телятины с тортеллини, пармезаном и шпинатом, салат из томатов с буйволиной моцареллой, тар-тар из тунца с каперсами, апельсинами и оливками, и - мечта гурмана - пармиджана из баклажанов. Впрочем, авторские рецепты шеф-повара не менее удивительны. Кролик по-римски с пекорино, ризотто с радиккио, каштанами и щёчками телёнка, тушёными в красном вине… Меню обновляется четырежды в год, а вкус каждого блюда неповторим – в этом, по мнению знаменитого шеф-повара из Италии, и заключается магия кулинарии. #[br] #[br] Преподаватель одной из лучших кулинарных школ мира – римской «Gambero Rosso», он не расстался с любимым делом и в Петербурге. Мастер-классы Фабрицио Фатуччи в «Gusto» – не просто способ отлично провести время, выведать секреты бабушки Луиджины и «haute cuisine». Это настоящие гастрономические шоу, которые приносят радость. А именно это - уверен Фабрицио - и есть единственно правильная цель - для хорошего ресторана, шеф-повара, человека.
+
+    // main-dishes
+    .main-dishes
+      .main-dishes__container
+        h3.main-dishes__title Фирменные блюда шефа
+        ul.main-dishes__list
+          li.main-dishes__item: figure
+            .main-dishes__image
+              img(src="images/main-dish--pork.jpg")
+            figcaption.main-dishes__text Свиная грудинка с апельсином и корицей
+          li.main-dishes__item: figure
+            .main-dishes__image
+              img(src="images/main-dish--carpaccio.jpg")
+            figcaption.main-dishes__text Карпаччо из тыквы с креветками и руколой
+          li.main-dishes__item: figure
+            .main-dishes__image
+              img(src="images/main-dish--pasta.jpg")
+            figcaption.main-dishes__text Паста болоньезе
+          li.main-dishes__item: figure
+            .main-dishes__image
+              img(src="images/main-dish--mutton.jpg")
+            figcaption.main-dishes__text Грудинка баранья по-флорентийски
+
+    // master-classes
+    .mc-preview
+      .mc-preview__container
+        h3.mc-preview__title Проводит мастер-классы
+        ul.mc-preview__list
+          li.mc-preview__item
+            h4.mc-preview__subtitle Viva Italia. Горячий Хэллоуин с Фабрицио Фатуччи
+            .mc-preview__image.mc-preview__image--bg
+              img(src="images/mk__preview--viva.jpg")
+              a.btn.mc-preview__btn.mc-preview__btn--more(href="#") Подробнее
+              a.btn.mc-preview__btn.mc-preview__btn--enroll(href="#") Записаться
+            .mc-preview__content
+              .mc-preview__recipe
+                span.mc-preview__recipe-title Приготовим:
+                ol.mc-preview__recipe-list
+                  li.mc-preview__recipe-item Капуччино из тыквы с трюфелем
+                  li.mc-preview__recipe-item Карпаччо из тыквы с креветками и руколой
+                  li.mc-preview__recipe-item Сладкое тыквенное печенье
+              .mc-preview__info
+                ul.mc-preview__info-list
+                  li.mc-preview__info-item Чт #[span.mc-preview__info-item--marked 17 Ноября 2015]
+                  li.mc-preview__info-item #[span.mc-preview__info-item--marked в 19:00]
+                  li.mc-preview__info-item #[span.mc-preview__info-item--marked.mc-preview__info-item--bold 3700 руб.]
+          li.mc-preview__item
+            h4.mc-preview__subtitle Апельсиновый рай с Нико ди Мауро
+            .mc-preview__image.mc-preview__image--bg
+              img(src="images/mk__preview--orange.jpg")
+              a.btn.mc-preview__btn.mc-preview__btn--more(href="#") Подробнее
+              a.btn.mc-preview__btn.mc-preview__btn--enroll(href="#") Записаться
+            .mc-preview__content
+              .mc-preview__recipe
+                span.mc-preview__recipe-title Приготовим:
+                ol.mc-preview__recipe-list
+                  li.mc-preview__recipe-item Паста с апельсинами
+                  li.mc-preview__recipe-item Свиная грудинка с апельсином и корицей
+                  li.mc-preview__recipe-item Апельсиновый мусс
+              .mc-preview__info
+                ul.mc-preview__info-list
+                  li.mc-preview__info-item Чт #[span.mc-preview__info-item--marked 25 Ноября 2015]
+                  li.mc-preview__info-item #[span.mc-preview__info-item--marked в 19:00]
+                  li.mc-preview__info-item #[span.mc-preview__info-item--marked.mc-preview__info-item--bold 4500 руб.]
+            li.mc-preview__item
+              h4.mc-preview__subtitle "Богатство Средиземноморья" с Фабрицио Фатуччи
+              .mc-preview__image.mc-preview__image--bg
+                img(src="images/mk__preview--borscht.jpg")
+                a.btn.mc-preview__btn.mc-preview__btn--more(href="#") Подробнее
+                a.btn.mc-preview__btn.mc-preview__btn--enroll(href="#") Записаться
+              .mc-preview__content
+                .mc-preview__recipe
+                  span.mc-preview__recipe-title Приготовим:
+                  ol.mc-preview__recipe-list
+                    li.mc-preview__recipe-item Средиземноморский суп с кавателли мидиями, белой фасолью и пекорино
+                    li.mc-preview__recipe-item Спагетти с гребешками, чернилами каракатицы, томатами и чили
+                    li.mc-preview__recipe-item Осьминог с пармантье из тоинамбура
+                .mc-preview__info
+                  ul.mc-preview__info-list
+                    li.mc-preview__info-item Чт #[span.mc-preview__info-item--marked 30 Ноября 2015]
+                    li.mc-preview__info-item #[span.mc-preview__info-item--marked в 19:00]
+                    li.mc-preview__info-item #[span.mc-preview__info-item--marked.mc-preview__info-item--bold 5000 руб.]
+
+    // footer
+    .footer
+      .footer__container
+        .footer__logo
+        nav.footer__menu
+          ul.footer__list
+            li.footer__item: a(href="#") Мастер-классы
+            li.footer__item: a.active(href="#") Праздники и корпоративы
+            li.footer__item: a(href="#") О школе и поварах
+            li.footer__item: a(href="#") Галерея
+            li.footer__item: a(href="#") Партнёры
+            li.footer__item: a(href="#") Блог шеф-повара
+            li.footer__item: a(href="#") Контакты
+          ul.footer__labels
+            li.footer__labels-item Copyright © 2015 GUSTOMAESTRO
+            li.footer__labels-item Сделано в Astralite

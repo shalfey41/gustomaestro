@@ -1,0 +1,130 @@
+doctype html
+html(lang="ru")
+  - title = "Блог Шеф-повара | GUSTOMAESTRO"
+  include blocks/head/head
+
+  body
+    include blocks/browser-warning/browser-warning
+    // top-panel
+    section.top-panel
+      .top-panel__container
+        ul.top-panel__social-list
+          li.top-panel__social-item: a.top-panel__social-item--rss(target="_blank", href="http://www.gustomaestro.ru/feed.php")
+          li.top-panel__social-item: a.top-panel__social-item--vk(target="_blank", href="https://vk.com/gustomaestro")
+          li.top-panel__social-item: a.top-panel__social-item--facebook(target="_blank", href="https://www.facebook.com/gustospb?ref=hl")
+          li.top-panel__social-item: a.top-panel__social-item--instagram(target="_blank", href="https://www.instagram.com/gustorestaurant/")
+          li.top-panel__social-item: a.top-panel__social-item--tripadvisor(target="_blank", href="http://goo.gl/Ra2iEb")
+          li.top-panel__social-item: a.top-panel__social-item--foursquare(target="_blank", href="https://goo.gl/WMmoKW")
+
+        ul.top-panel__contacts-list
+          li.top-panel__contacts-item.top-panel__contacts-item--phone: a(target="_blank", href="tel:78129033732") (812) 903 37 32
+          li.top-panel__contacts-item.top-panel__contacts-item--address Санкт-Петербург, Дегтярная ул., 1
+
+    include blocks/header/header
+
+    // promo
+    section.promo.promo--blog
+      .promo__container
+        h1.promo__title Блог Шеф-повара
+
+    main.main.main--articles
+      .main__container
+        // articles
+        section.articles
+          ul.articles__list
+            li.articles__item
+              h3.articles__title: a(href="#") Россия не для всех
+              .articles__info
+                span.articles__text.articles__text--serif 2 апреля 2015
+                span.articles__text.articles__text--serif 6 комментариев
+              .articles__image: a(href="#")
+                img(src="images/article__promo--preview1.jpg")
+              p.articles__text Почти каждый день я получаю электронные письма, сообщения в Фейсбуке и звонки от людей, которые хотят приехать работать в Россию. С одной стороны, мне приятно, потому что если они звонят мне, то что-то стоящее за 10 лет я все-таки сделал) Но с другой стороны, Россия  - не лубочная потешная страна, как многие думают, она не легка для жизни и работы в ней. [...]
+              a.link(href="#") Читать далее
+
+            li.articles__item
+              h3.articles__title: a(href="#") Идеальное блюдо
+              .articles__info
+                span.articles__text.articles__text--serif 31 марта 2015
+                span.articles__text.articles__text--serif 3 комментария
+              .articles__image: a(href="#")
+                img(src="images/article__promo--preview2.jpg")
+              p.articles__text Я часто ошибаюсь. Может быть, из-за моего волнения и возбуждения, которое приходит в момент трансформации идеи и мысли в реальность, может из-за моего желания всегда удивлять, которое часто сильно овладевает мной ( что, несомненно, является признаком незрелости), но часто так бывает, что, создавая новое блюдо, я не всегда остаюсь доволен на 100 %.. [...]
+              a.link(href="#") Читать далее
+
+            li.articles__item
+              h3.articles__title: a(href="#") Россия не для всех
+              .articles__info
+                span.articles__text.articles__text--serif 2 апреля 2015
+                span.articles__text.articles__text--serif 6 комментариев
+              .articles__image: a(href="#")
+                img(src="images/article__promo--preview1.jpg")
+              p.articles__text Почти каждый день я получаю электронные письма, сообщения в Фейсбуке и звонки от людей, которые хотят приехать работать в Россию. С одной стороны, мне приятно, потому что если они звонят мне, то что-то стоящее за 10 лет я все-таки сделал) Но с другой стороны, Россия  - не лубочная потешная страна, как многие думают, она не легка для жизни и работы в ней. [...]
+              a.link(href="#") Читать далее
+
+            li.articles__item
+              h3.articles__title: a(href="#") Идеальное блюдо
+              .articles__info
+                span.articles__text.articles__text--serif 31 марта 2015
+                span.articles__text.articles__text--serif 3 комментария
+              .articles__image: a(href="#")
+                img(src="images/article__promo--preview2.jpg")
+              p.articles__text Я часто ошибаюсь. Может быть, из-за моего волнения и возбуждения, которое приходит в момент трансформации идеи и мысли в реальность, может из-за моего желания всегда удивлять, которое часто сильно овладевает мной ( что, несомненно, является признаком незрелости), но часто так бывает, что, создавая новое блюдо, я не всегда остаюсь доволен на 100 %.. [...]
+              a.link(href="#") Читать далее
+
+            li.articles__item
+              h3.articles__title: a(href="#") Россия не для всех
+              .articles__info
+                span.articles__text.articles__text--serif 2 апреля 2015
+                span.articles__text.articles__text--serif 6 комментариев
+              .articles__image: a(href="#")
+                img(src="images/article__promo--preview1.jpg")
+              p.articles__text Почти каждый день я получаю электронные письма, сообщения в Фейсбуке и звонки от людей, которые хотят приехать работать в Россию. С одной стороны, мне приятно, потому что если они звонят мне, то что-то стоящее за 10 лет я все-таки сделал) Но с другой стороны, Россия  - не лубочная потешная страна, как многие думают, она не легка для жизни и работы в ней. [...]
+              a.link(href="#") Читать далее
+
+          nav.pagination
+            ul.pagination__list
+              li.pagination__item: a.pagination__arrow(href="#")
+              li.pagination__item: a(href="#") 1
+              li.pagination__item: a.active(href="#") 2
+              li.pagination__item: a(href="#") 3
+              li.pagination__item ...
+              li.pagination__item: a(href="#") 12
+              li.pagination__item: a.pagination__arrow.pagination__arrow--left(href="#")
+
+        // aside
+        aside.aside
+          .aside__about-chief
+            h3.aside__title Фабрицио Фаттучи
+            p.aside__text Приходя в «Gusto», Вы попадаете в гости к знаменитому шеф-повару из Италии Фабрицио Фатуччи. Искусство готовить, по версии мэтра, – это, прежде всего, чувства, эмоции и настроение, которые можно подарить другим. В поисках этих главных ингредиентов, уроженец Рима, он объездил всю Италию. Впитал ароматы Тосканы, Сицилии, Неаполя, и наполнил ими свои блюда. Его кредо - импровизация с душой. Отточив мастерство в десятках лучших заведений, от лондонского гранд-отеля «Savoy» до московского «Forbes», в Петербурге Фабрицио осуществил свою мечту – о «живом» и «тёплом» ресторане, где гости чувствуют себя как дома [...]
+            a.link.aside__link(href="#") Подробнее о Фабрицио
+
+          .aside__popular
+            h3.aside__title Чаще всего читают
+            ul.aside__list
+              li.aside__item: a.link(href="#") Россия не для всех
+              li.aside__item: a.link(href="#") Кажется, будто это было вчера, а прошёл уже целый год!
+              li.aside__item: a.link(href="#") Фабрицио Фатуччи об эстетике формы и цвета
+              li.aside__item: a.link(href="#") «Яичница-болтунья»
+              li.aside__item: a.link(href="#") В гостях у Пятого канала
+          .aside__subscribe
+            p.aside__subscribe-text Подписка на группу вконтакте
+          .aside__subscribe
+            p.aside__subscribe-text Подписка Facebook
+
+    // footer
+    .footer
+      .footer__container
+        .footer__logo
+        nav.footer__menu
+          ul.footer__list
+            li.footer__item: a(href="#") Мастер-классы
+            li.footer__item: a.active(href="#") Праздники и корпоративы
+            li.footer__item: a(href="#") О школе и поварах
+            li.footer__item: a(href="#") Галерея
+            li.footer__item: a(href="#") Партнёры
+            li.footer__item: a(href="#") Блог шеф-повара
+            li.footer__item: a(href="#") Контакты
+          ul.footer__labels
+            li.footer__labels-item Copyright © 2015 GUSTOMAESTRO
+            li.footer__labels-item Сделано в Astralite

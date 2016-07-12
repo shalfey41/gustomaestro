@@ -1,0 +1,17 @@
+.rss {background: svg-load(../../images/icon--rss.svg, fill=#a33208)}
+.vk {background: svg-load(../../images/icon--vk.svg, fill=#a33208)}
+.facebook {background: svg-load(../../images/icon--facebook.svg, fill=#a33208)}
+.instagram {background: svg-load(../../images/icon--instagram.svg, fill=#a33208)}
+.tripadvisor {background: svg-load(../../images/icon--tripadvisor.svg, fill=#a33208)}
+.foursquare {background: svg-load(../../images/icon--foursquare.svg, fill=#a33208)}
+.phone {background: svg-load(../../images/icon--phone.svg, fill=#fff)}
+.point {background: svg-load(../../images/icon--point.svg, fill=#fff)}
+.chief {background: svg-load(../../images/icon--chief.svg, fill=#a33208)}
+.dish {background: svg-load(../../images/icon--dish.svg, fill=#a33208)}
+.plate {background: svg-load(../../images/icon--plate.svg, stroke:#a33208, stroke-miterlimit:10, stroke-width:3px, fill:none)}
+.footer__logo {background: svg-load(../../images/footer__logo.svg, fill=#a33208)}
+.become-partner {background: svg-load(../../images/icon--become-partner.svg, fill=#fff)}
+.spoon-fork {background: svg-load(../../images/icon--spoon-fork.svg, fill=#fff)}
+.checkbox-arrow {background: svg-load(../../images/checkbox-arrow.svg, fill=#fff)}
+.calendar__arrow {background: svg-load(../../images/calendar__arrow.svg, fill=#fff)}
+.calendar__arrow {background: svg-load(../../images/pagination__arrow.svg, fill=#5c4739)}
